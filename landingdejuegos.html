@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYSTEM OVERRIDE — Guillermo Coronel</title>
+    <style>
+        :root {
+            --bg: #050a12;
+            --neon-green: #2ef07f;
+            --neon-blue: #53e5ff;
+            --neon-red: #ff5470;
+            --gold: #ffd34d;
+            --text: #e9f2ff;
+        }
+
+        /* FONDO DINÁMICO DE JUEGO */
+        body {
+            margin: 0;
+            background-color: var(--bg);
+            background: linear-gradient(to bottom, #0d1b2a 0%, #050a12 100%);
+            color: var(--text);
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Efecto de Rejilla (Grid) Tron Style */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: 
+                linear-gradient(rgba(83, 229, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(83, 229, 255, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            transform: perspective(500px) rotateX(60deg);
+            transform-origin: center bottom;
+            z-index: -1;
+            animation: moveGrid 5s linear infinite;
+        }
+
+        @keyframes moveGrid {
+            from { background-position: 0 0; }
+            to { background-position: 0 50px; }
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            text-align: center;
+            padding: 40px 20px;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            color: var(--gold);
+            text-shadow: 0 0 20px rgba(255, 211, 77, 0.8), 3px 3px 0px var(--neon-red);
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--neon-green);
+            margin-bottom: 40px;
+            letter-spacing: 4px;
+            font-weight: bold;
+            text-shadow: 0 0 10px var(--neon-green);
+        }
+
+        .main-flyer {
+            width: 100%;
+            border: 4px solid var(--text);
+            box-shadow: 0 0 40px rgba(83, 229, 255, 0.4);
+            border-radius: 4px;
+            margin-bottom: 50px;
+            transition: transform 0.3s;
+        }
+
+        .main-flyer:hover { transform: scale(1.01); }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            background: rgba(5, 10, 18, 0.9);
+            border: 2px solid var(--neon-blue);
+            padding: 25px;
+            border-radius: 0;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: "LEVEL SELECT";
+            position: absolute;
+            top: 5px; right: 5px;
+            font-size: 0.6rem;
+            color: var(--neon-blue);
+            opacity: 0.5;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            border-color: var(--gold);
+            box-shadow: 0 0 30px var(--gold);
+        }
+
+        .card h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.4rem;
+            color: var(--gold);
+        }
+
+        .btn-play {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: var(--neon-blue);
+            color: var(--bg);
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .footer-cta {
+            background: rgba(0,0,0,0.8);
+            padding: 50px 20px;
+            border: 2px solid var(--neon-red);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .btn-linkedin {
+            background: #0077b5; /* Azul LinkedIn */
+            color: white;
+            padding: 25px 50px;
+            text-decoration: none;
+            font-size: 1.8rem;
+            font-weight: bold;
+            border: 4px solid white;
+            box-shadow: 0 0 25px #0077b5;
+            display: inline-block;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .btn-linkedin:hover {
+            transform: translateY(-5px) rotate(-1deg);
+            box-shadow: 0 0 50px var(--neon-blue);
+            filter: brightness(1.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>SYSTEM OVERRIDE</h1>
+        <p class="subtitle">ESTRATEGIA TÉCNICA GAMIFICADA</p>
+
+        <img src="flyer-games-cv.png" alt="Tetralogía Guillermo Coronel" class="main-flyer">
+
+        <div class="grid">
+            <a href="https://job-seeker-pro-two.vercel.app/" class="card" target="_blank">
+                <h3>JOB SEEKER</h3>
+                <p>Superá los filtros ATS lanzando "CV Attacks".</p>
+                <div class="btn-play">START GAME</div>
+            </a>
+
+            <a href="https://reclutator.vercel.app/" class="card" target="_blank">
+                <h3>RECLUTATOR</h3>
+                <p>Enfrentá al Dinosaurio y sus proyectiles de excusas.</p>
+                <div class="btn-play">START GAME</div>
+            </a>
+
+            <a href="https://hiringkomg.vercel.app/" class="card" target="_blank">
+                <h3>HIRING KONG</h3>
+                <p>Inversión de roles. Atrapá el talento antes del scroll.</p>
+                <div class="btn-play">START GAME</div>
+            </a>
+
+            <a href="https://atskombat.vercel.app/" class="card" target="_blank">
+                <h3>ATS KOMBAT</h3>
+                <p>Fighting game de 16-bits contra el algoritmo.</p>
+                <div class="btn-play">START GAME</div>
+            </a>
+        </div>
+
+        <div class="footer-cta">
+            <p style="letter-spacing: 2px; margin-bottom: 30px;">¿LISTO PARA CONTRATAR AL PROTAGONISTA?</p>
+            <a href="https://www.linkedin.com/in/guillermo-coronel/?locale=es" class="btn-linkedin" target="_blank">
+                CONECTAR EN LINKEDIN
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
