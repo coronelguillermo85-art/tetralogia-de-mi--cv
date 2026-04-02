@@ -3,9 +3,9 @@
 [![Saga-Job-Seeker](https://img.shields.io/badge/Tetralogía-CV-f2c94c?style=for-the-badge&logo=game-developer)](https://github.com/coronelguillermo85-art)
 [![LinkedIn-Profile](https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/guillermo-coronel/)
 
-> **"El sistema de selección está roto. Yo lo arreglé con código."**
+> **"El sistema de selección está roto. Yo lo arreglé con creatividad."**
 
-Esta es la **Landing Page oficial** que integra mis cuatro desarrollos principales. No es solo un portal de enlaces; es el cierre de una narrativa de **Innovación Pública y Gestión del Cambio** donde demuestro que la comunicación estratégica y el desarrollo técnico pueden jubilar al PDF estático.
+Esta es la **Landing Page oficial** que integra mis cuatro desarrollos principales. No es solo un portal de enlaces; es el cierre de una narrativa de **Innovación** donde demuestro que la comunicación estratégica y el desarrollo técnico pueden jubilar al PDF estático.
 
 ## 🎮 El "Level Select" del Candidato
 
