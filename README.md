@@ -5,7 +5,7 @@
 
 > **"El sistema de selección está roto. Yo lo arreglé con creatividad."**
 
-Esta es la **Landing Page oficial** que integra mis cuatro desarrollos principales. No es solo un portal de enlaces; es el cierre de una narrativa de **Innovación** donde demuestro que la comunicación estratégica y el desarrollo técnico pueden jubilar al PDF estático.
+Esta es la **Landing Page oficial** que integra los cuatro desarrollos principales de la versión gamnificada de  mi CV. No es solo un portal de enlaces; es el cierre de una narrativa de **Innovación** donde demuestro que la comunicación estratégica y el desarrollo técnico pueden jubilar al PDF estático.
 
 ## 🎮 El "Level Select" del Candidato
 
