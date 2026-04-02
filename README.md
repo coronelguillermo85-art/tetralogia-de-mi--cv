@@ -30,8 +30,9 @@ Como estudiante de **Innovación Pública (UNER)**, entiendo que modernizar proc
 * Identificar un problema (postulaciones ignoradas).
 * Diseñar una solución (gamificación).
 * Ejecutarla con herramientas puras (Vanilla JS/CSS).
+* 
+---<img width="1536" height="1024" alt="flyer gmes cv " src="https://github.com/user-attachments/assets/b497bf94-57df-4891-aebc-90cb6ebcface" />
 
----
 
 ## 🚀 Acceso al Ecosistema
 
